@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SFUserFriendlySymbols
 
 @main
 struct SFCymbolAppWithSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SymbolsCatalogView()
         }
     }
 }
