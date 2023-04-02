@@ -14,6 +14,9 @@
 		5DFBDF0429D9960D004E0B78 /* SFCymbolAppWithSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBDF0329D9960D004E0B78 /* SFCymbolAppWithSwiftUITests.swift */; };
 		5DFBDF0E29D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBDF0D29D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITests.swift */; };
 		5DFBDF1029D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBDF0F29D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITestsLaunchTests.swift */; };
+		5DFBDF1E29D99751004E0B78 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 5DFBDF1D29D99751004E0B78 /* SFUserFriendlySymbols */; };
+		5DFBDF2429D99847004E0B78 /* SymbolsCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBDF2329D99847004E0B78 /* SymbolsCatalogView.swift */; };
+		5DFBDF2729D9A0E1004E0B78 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBDF2629D9A0E0004E0B78 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		5DFBDF0929D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFCymbolAppWithSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFBDF0D29D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCymbolAppWithSwiftUIUITests.swift; sourceTree = "<group>"; };
 		5DFBDF0F29D9960D004E0B78 /* SFCymbolAppWithSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCymbolAppWithSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DFBDF2329D99847004E0B78 /* SymbolsCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsCatalogView.swift; sourceTree = "<group>"; };
+		5DFBDF2629D9A0E0004E0B78 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFBDF1E29D99751004E0B78 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,8 @@
 		5DFBDEF129D9960B004E0B78 /* SFCymbolAppWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5DFBDF2529D9A0D8004E0B78 /* ViewModel */,
+				5DFBDF2229D9983E004E0B78 /* SymbolsCatalogView */,
 				5DFBDEF229D9960B004E0B78 /* SFCymbolAppWithSwiftUIApp.swift */,
 				5DFBDEF429D9960B004E0B78 /* ContentView.swift */,
 				5DFBDEF629D9960D004E0B78 /* Assets.xcassets */,
@@ -127,6 +135,22 @@
 			path = SFCymbolAppWithSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		5DFBDF2229D9983E004E0B78 /* SymbolsCatalogView */ = {
+			isa = PBXGroup;
+			children = (
+				5DFBDF2329D99847004E0B78 /* SymbolsCatalogView.swift */,
+			);
+			path = SymbolsCatalogView;
+			sourceTree = "<group>";
+		};
+		5DFBDF2529D9A0D8004E0B78 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5DFBDF2629D9A0E0004E0B78 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +167,9 @@
 			dependencies = (
 			);
 			name = SFCymbolAppWithSwiftUI;
+			packageProductDependencies = (
+				5DFBDF1D29D99751004E0B78 /* SFUserFriendlySymbols */,
+			);
 			productName = SFCymbolAppWithSwiftUI;
 			productReference = 5DFBDEEF29D9960B004E0B78 /* SFCymbolAppWithSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,9 @@
 				Base,
 			);
 			mainGroup = 5DFBDEE629D9960B004E0B78;
+			packageReferences = (
+				5DFBDF1C29D99751004E0B78 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */,
+			);
 			productRefGroup = 5DFBDEF029D9960B004E0B78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DFBDEF529D9960B004E0B78 /* ContentView.swift in Sources */,
+				5DFBDF2429D99847004E0B78 /* SymbolsCatalogView.swift in Sources */,
+				5DFBDF2729D9A0E1004E0B78 /* ViewModel.swift in Sources */,
 				5DFBDEF329D9960B004E0B78 /* SFCymbolAppWithSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DFBDF1C29D99751004E0B78 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/littleossa/SFUserFriendlySymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DFBDF1D29D99751004E0B78 /* SFUserFriendlySymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DFBDF1C29D99751004E0B78 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
+			productName = SFUserFriendlySymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DFBDEE729D9960B004E0B78 /* Project object */;
 }
